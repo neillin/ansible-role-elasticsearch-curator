@@ -53,3 +53,4 @@ elasticsearch_curator_action_yaml: |
         exclude:
 
 elasticsearch_curator_pip_package: 'python-pip'
+pip_executable: "{{ 'pip3' if pip_package.startswith('python3') else 'pip' }}"
